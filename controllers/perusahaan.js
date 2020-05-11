@@ -14,7 +14,18 @@ const createPerusahaan = async (req, res) => {
 const getAllPerusahaan = async (req, res) => {
     try {
         const perusahaan = await models.Perusahaan.findAll({
-            include: []
+            include: [
+                {
+                    model: models.Lowongan,
+                    as: "lowongans",
+                    include: [
+                        {
+                            model: models.Lamaran,
+                            as: "lowongans"
+                        }
+                    ]
+                }
+            ]
         });
         return res.status(200).json({ perusahaan });
     } catch (error) {

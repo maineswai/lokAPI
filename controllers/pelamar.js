@@ -14,7 +14,18 @@ const createPelamar = async (req, res) => {
 const getAllPelamar = async (req, res) => {
     try {
         const pelamar = await models.Pelamar.findAll({
-            include: []
+            include: [
+                {
+                    model: models.Lamaran,
+                    as: "lamarans",
+                    include: [
+                        {
+                            model: models.Lowongan,
+                            as: "lowongan"
+                        }
+                    ]
+                }
+            ]
         });
         return res.status(200).json({ pelamar })
     } catch (error) {

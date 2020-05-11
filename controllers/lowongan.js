@@ -14,7 +14,16 @@ const createLowongan = async (req, res) => {
 const getAllLowongan = async (req, res) => {
     try {
         const lowongan = await models.Lowongan.findAll({
-            include: []
+            include: [
+                {
+                    model: models.Perusahaan,
+                    as: "perusahaans"
+                },
+                {
+                    model: models.Lamaran,
+                    as: "lowongans"
+                }
+            ]
         });
         return res.status(200).json({ lowongan });
     } catch (error) {
