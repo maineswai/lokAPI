@@ -5,7 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     lokasi: DataTypes.STRING,
     deskripsi: DataTypes.TEXT,
     email: DataTypes.STRING,
-    password: DataTypes.STRING
+    password: DataTypes.STRING,
+    gambar: DataTypes.STRING
   }, {});
   Perusahaan.associate = function(models) {
     // associations can be defined here
