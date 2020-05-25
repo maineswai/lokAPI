@@ -1,0 +1,650 @@
+{
+	"info": {
+		"_postman_id": "2fa2843c-d512-4237-95a2-eea3463d0f9f",
+		"name": "lokerAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Perusahaan",
+			"item": [
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Mamikos.com\",\n\t\"lokasi\": \"Indonesia\",\n\t\"deskripsi\": \"Aplikasi pencari info kost no 1 di Indonesia\",\n\t\"email\": \"mamikos@gmail.com\",\n\t\"password\": \"mamikos123\",\n\t\"gambar\": \"https://media-exp1.licdn.com/dms/image/C510BAQGy5BXVYCKsBw/company-logo_200_200/0?e=1597881600&v=beta&t=IM3Z6fqTxLxm6DBObEtHfTjUuy2dkqcNSunUMwRVlNE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/perusahaan/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"perusahaan",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Gameloft\",\n\t\"lokasi\": \"Perancis\",\n\t\"deskripsi\": \"Pengedar dan pengembang permainan video yang berkantor pusat di Paris, Perancis\",\n\t\"email\": \"gameloft@gmail.com\",\n\t\"password\": \"gameloft123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/perusahaan/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"perusahaan",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Gameloft\",\n\t\"lokasi\": \"Perancis\",\n\t\"deskripsi\": \"Pengedar dan pengembang permainan video yang berkantor pusat di Paris, Perancis\",\n\t\"email\": \"gameloft@gmail.com\",\n\t\"password\": \"gameloft123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/perusahaan/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"perusahaan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Gameloft Yogyakarta\",\n\t\"lokasi\": \"Perancis\",\n\t\"deskripsi\": \"Pengedar dan pengembang permainan video yang berkantor pusat di Paris, Perancis\",\n\t\"email\": \"gameloft@gmail.com\",\n\t\"password\": \"gameloft123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/perusahaan/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"perusahaan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pelamar",
+			"item": [
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Ikhsan Okta\",\n\t\"kelamin\": \"Pria\",\n\t\"telp\": \"08123456788901\",\n\t\"email\": \"ikhsan123@gmail.com\",\n\t\"password\": \"ikhsan123\",\n\t\"alamat\": \"Lampung\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/pelamar/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"pelamar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Gameloft\",\n\t\"lokasi\": \"Perancis\",\n\t\"deskripsi\": \"Pengedar dan pengembang permainan video yang berkantor pusat di Paris, Perancis\",\n\t\"email\": \"gameloft@gmail.com\",\n\t\"password\": \"gameloft123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/pelamar/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"pelamar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Gameloft\",\n\t\"lokasi\": \"Perancis\",\n\t\"deskripsi\": \"Pengedar dan pengembang permainan video yang berkantor pusat di Paris, Perancis\",\n\t\"email\": \"gameloft@gmail.com\",\n\t\"password\": \"gameloft123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/pelamar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"pelamar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Febrian Saputra\",\n\t\"kelamin\": \"Pria\",\n\t\"telp\": \"08123456788901\",\n\t\"email\": \"febrian123@gmail.com\",\n\t\"password\": \"febrian123\",\n\t\"alamat\": \"Surabaya\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/pelamar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"pelamar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Lowongan",
+			"item": [
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"posisi\": \"Senior Software Quality Assurance\",\n\t\"syarat\": \"Make sure that Mamikos product is tested and clean from bugs.\\nExecute testing and make sure testing activities are executed according to timeline.\\nAnalyze and actively giving feedback for Mamikos product requirement, flow, and design.\\nCreate and update test case on Mamikos products.\\nReporting issues into our task management tool for related department.\",\n\t\"cabang\": \"Yogyakarta\",\n\t\"gaji\": \"IDR 3,000,000 - 3,800,000\",\n\t\"kategori\": \"Komputer/IT\",\n\t\"perusahaanId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/lowongan/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"lowongan",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Gameloft\",\n\t\"lokasi\": \"Perancis\",\n\t\"deskripsi\": \"Pengedar dan pengembang permainan video yang berkantor pusat di Paris, Perancis\",\n\t\"email\": \"gameloft@gmail.com\",\n\t\"password\": \"gameloft123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/lowongan/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"lowongan",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Gameloft\",\n\t\"lokasi\": \"Perancis\",\n\t\"deskripsi\": \"Pengedar dan pengembang permainan video yang berkantor pusat di Paris, Perancis\",\n\t\"email\": \"gameloft@gmail.com\",\n\t\"password\": \"gameloft123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/lowongan/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"lowongan",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"posisi\": \"3D Artist_Modeler\",\n\t\"syarat\": \"Create 3D Character assets for mobile platforms while maintaining and pushing Gameloft’s high quality standards.\\nReport to the Lead 3D Artist for tasks, revisions, content pipeline/workflow, training and creative ideas.\\nProactively communicate and coordinate tasks with the team members before and after you in the content pipeline (in person/chat/email).\",\n\t\"cabang\": \"Yogyakarta\",\n\t\"gaji\": \"IDR 6,500,000 - 7,500,000\",\n\t\"kategori\": \"Komputer/IT\",\n\t\"perusahaanId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/lowongan/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"lowongan",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Lamaran",
+			"item": [
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"status\": \"\",\n\t\"pelamarId\": 1,\n\t\"lowonganId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/lamaran/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"lamaran",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Gameloft\",\n\t\"lokasi\": \"Perancis\",\n\t\"deskripsi\": \"Pengedar dan pengembang permainan video yang berkantor pusat di Paris, Perancis\",\n\t\"email\": \"gameloft@gmail.com\",\n\t\"password\": \"gameloft123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/lamaran/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"lamaran",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nama\": \"Gameloft\",\n\t\"lokasi\": \"Perancis\",\n\t\"deskripsi\": \"Pengedar dan pengembang permainan video yang berkantor pusat di Paris, Perancis\",\n\t\"email\": \"gameloft@gmail.com\",\n\t\"password\": \"gameloft123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/lamaran/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"lamaran",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"status\": \"masih di review\",\n\t\"pelamarId\": 1,\n\t\"lowonganId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3300/api/lamaran/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3300",
+							"path": [
+								"api",
+								"lamaran",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
