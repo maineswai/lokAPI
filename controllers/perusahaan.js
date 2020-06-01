@@ -10,7 +10,7 @@ const createPerusahaan = async (req, res) => {
             data: perusahaan
         });
     } catch (error) {
-        // return res.status(500).json({error: error.message})
+        // return res.status(500).json({error: error.message});
         return res.status(500).json({
             status: 500,
             message: error.message
